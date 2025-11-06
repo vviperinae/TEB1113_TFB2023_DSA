@@ -1,12 +1,10 @@
 #include <iostream>
 using namespace std;
-
 struct Node {
     string data;
     Node* next_ptr;
     
 };
-
 class Stack {
     private:
     Node* head;
@@ -21,9 +19,10 @@ class Stack {
         size = 0;
         capacity = maxCapacity;
     }
+
     void push(string value) {
         if (isFull()) {
-            cout << "Stack overflow!\n";
+            cout << "Stack overflow! cannot push\n";
             return;
         }
         Node* newNode = new Node;
@@ -36,6 +35,7 @@ class Stack {
         size++;
         cout << "\nPushed: " << value << endl;
     }
+
     void pop(){
         if (isEmpty()) {
             cout << "Stack underflow! Cannot pop\n";
@@ -50,6 +50,7 @@ class Stack {
         size--;
         cout << "\nPopped value: "<<popped<<endl;
     }
+
     void peek(){
         if (isEmpty()) {
             cout << "Stack is empty!\n";
@@ -60,11 +61,10 @@ class Stack {
     bool isFull() {
         return size >= capacity;
     }
-    
     bool isEmpty() {
         return head == nullptr;
     }
-    
+
     void display() {
         if (isEmpty()) {
             cout << "\nStack is empty!" << endl;
@@ -78,25 +78,24 @@ class Stack {
         }
         cout << endl;
     }
+
     int getCurrentSize() {
         return size;
     }
-    
+
     int getMaxSize() {
         return capacity;
     }
-    
 };
 
 int main() {
     int stack_size;
     int option;
     string value;
-    
     cout << "Enter Stack size: ";
     cin >> stack_size;
-    
     Stack myStack(stack_size);
+    
     while(option!=7){
         cout << "\n1. Push\n2. Pop\n3. Peek\n4. Check if stack is full\n5. Check if stack is empty\n6. Display Stack\n7. EXIT\nEnter option: ";
         cin >> option;
