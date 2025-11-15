@@ -10,3 +10,5 @@
 | 25/10/09 | **Linked List** |[**Task 01 - single linked list**](https://github.com/vviperinae/TEB1113_TFB2023_DSA/blob/main/25_10_09/task1.cpp)<br>[**Task 02 - doubly linked list**](https://github.com/vviperinae/TEB1113_TFB2023_DSA/blob/main/25_10_09/task2.cpp)|
 | 25/10/16 | **Circular Linked List** |[**Task 01**](https://github.com/vviperinae/TEB1113_TFB2023_DSA/blob/main/25_10_16/task1.cpp)|
 | 25/10/23 | **Stack** |[**Task 01**](https://github.com/vviperinae/TEB1113_TFB2023_DSA/blob/main/25_10_23/task_1.cpp)|
+| 25/11/06 | **Queue** |[**Task 01**](https://github.com/vviperinae/TEB1113_TFB2023_DSA/blob/main/25_11_06/task_1.cpp)|
+
